@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ROAM - How</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" >
+</head>
+
+<body>
+
+    
+    
+<header>
+
+<!--Navbar-->
+       <nav class="navbar navbar-toggleable-md navbar-light">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="logo-wrapper" href="index.html">
+                    <img src="img/logo1.png" class="img-fluid" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                     <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                        <li class="nav-item">
+                           <a href="product.html" class="nav-link">What the product is</a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="user.html" class="nav-link">Who will use it</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="how.html">How will they use it</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="design.html">The product design</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                           <a href="references.html" class="nav-link">References</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+<!--Section: Diagram-->
+   <section class="container-fluid top"> 
+      
+     
+    <div class="container" id="usecase">
+
+
+    <!--Section: Use Case Diagram-->
+
+                <div class="row">
+
+                <div class="col-md-3 animated fadeInLeft">
+                   <div class="orange container">
+              <h2 class="display-1 text-white">03</h2>
+              <h3 class="text-white">How will they use it<br><br></h3>
+              </div> 
+                </div>
+
+                <div class="col-md-9">
+
+
+                <img src="img/use-case-diagram.jpg" class="img-fluid" alt="use case diagram">
+                <br>
+
+                </div>
+
+
+
+        </div> 
+           </div>
+    </section>
+<!--Section: /Diagram-->       
+
+
+<!--Section: Booking-->
+        <section class="container-fluid"> 
+
+          <div class="row">
+
+        <!--Use: Booking-->
+           <div class="col-md-5" id="booking">
+               <h6 class="blue-text">Booking</h6>
+               <h2>Use Case</h2>
+               <br>
+      <!--Table-->  
+           <dl class="row">
+
+          <dt class="col-sm-4">Opens App</dt>
+          <dd class="col-sm-8">The user opens the app and is returned the correct application for their device, i.e. mobile, desktop, tablet, smart watch.<br><br></dd>
+
+          <dt class="col-sm-4">Makes a search</dt>
+          <dd class="col-sm-8">User enters a holiday destination, the system then responds with multiple category choices of items you need to complete a plan for a holiday booking. i.e. flights, accommodation, restaurants, activities.<br><br></dd>
+
+           <dt class="col-sm-4">Chooses Category</dt>
+            <dd class="col-sm-8">User chooses a category and the system responds by return a list of recommendations for that particular category.<br><br></dd>
+
+           <dt class="col-sm-4">Clicks an Item</dt>
+            <dd class="col-sm-8">User selects one item from the list and the system gives the user more information i.e. pictures, a description, star rating, reviews.<br><br></dd>
+
+           <dt class="col-sm-4">User Likes/Saves Item</dt>
+            <dd class="col-sm-8">Once a user has decided they like a particular item they then decide to save this item. If the user is registered the system will save the item to their itinerary. The user is not registered they will be asked to do so.<br><br></dd>
+
+         <dt class="col-sm-4">User Opens a Profile</dt>
+            <dd class="col-sm-8">User signs up via social media (or e-mail), system stores their information.<br><br></dd>
+
+         <dt class="col-sm-4">User Continues Itinerary Search</dt>
+            <dd class="col-sm-8">User chooses to continue browsing in a different category, repeating process 3, 4 and 5 until they are happy with their itinerary.<br><br></dd>
+
+        <dt class="col-sm-4">User Reviews Itinerary</dt>
+         <dd class="col-sm-8">User clicks on “review itinerary” at which point the users itinerary is displayed for them to review with a book now button.<br><br></dd>
+<br>
+         <dt class="col-sm-4">User Books Itinerary</dt>
+            <dd class="col-sm-8">The user clicks book itinerary at which point the system sends an e-mail on behalf of the user to the vendors to enquire about availability.
+    </dd>
+        </dl>
+
+      </div>  
+        <!--/Use: Booking-->
+
+
+        <!--Task: Booking-->     
+        <div class="col-md-7 container-fluid" id="booking">
+                <h6 class="blue-text">Booking</h6>
+               <h2>Task Case</h2>    
+    <!--Table-->  
+      <div class="table-responsive"> 
+       <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Step</th>
+      <th>User Activity</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <th>1</th>
+      <td>Opens App</td>
+      <td>Opens App (mobile or desktop)</td>
+      <td>Notes whether user is on mobile or desktop</td>
+    </tr>
+    <tr>
+     <th>2</th>
+      <td>Makes a search</td>
+      <td>User enters holiday destination</td>
+      <td>System responds with a list of categories (hotel, activity, flights, food)</td>
+    </tr>
+    <tr>
+     <th>3</th>
+      <td>Choose category</td>
+      <td>User clicks on prefered a category</td>
+      <td>System gives top items in list format in the chosen location</td>
+    </tr>
+    <tr>
+     <th>4</th>
+      <td>Clicks a particular item</td>
+      <td>User selects one item from the list</td>
+      <td>Systems opens more information about the item</td>
+    </tr>
+    <tr>
+     <th>5</th>
+      <td>Decides they like item</td>
+      <td>Saves item to itinerary</td>
+      <td>System responds with an option to open a profile and then saves to users profile.
+User then asked continue or choose a new category</td>
+    </tr>
+    <tr>
+     <th>6</th>
+      <td>Choose category</td>
+      <td>User clicks on prefered a category</td>
+      <td>System gives top items in list format in the chosen location</td>
+    </tr>
+    <tr>
+     <th>7</th>
+      <td>User decides they like one in particular</td>
+      <td>User selects one item from the list</td>
+      <td>Systems opens more information about the item</td>
+    </tr>
+    <tr>
+     <th>8</th>
+      <td>Decides they like item</td>
+      <td>Saves item to itinerary</td>
+      <td>System responds with an option to open a profile and then saves to users profile. User then asked continue or choose a new category
+</td>
+    </tr>
+    <tr>
+     <th>9</th>
+      <td>User decides to review itinerary</td>
+      <td>User presses review itinerary</td>
+      <td>System return chosen itinerary
+</td>
+    </tr>
+    <tr>
+     <th>10</th>
+      <td>User wants to proceed and book</td>
+      <td>User confirms interest</td>
+      <td>System sends e-mails (via users profile) to the vendors to verify availability.
+</td>
+    </tr>
+  </tbody>
+</table>
+  </div>  
+   <!--/Table-->
+            </div>
+        <!--/Task: Booking-->   
+         
+            </div>
+        
+
+            
+            
+    </section>
+<!--Section: /Booking-->
+
+
+
+<!--Section: Sharing-->
+        <section class="container-fluid"> 
+
+          <div class="row">
+
+       
+       <!--Use: Sharing-->     
+        <div class="col-md-5" id="sharing">
+                <h6 class="white-text">Sharing</h6>
+               <h2>Use Case</h2>
+               <br>
+       
+           <dl class="row">
+
+          <dt class="col-sm-4">Opens App</dt>
+          <dd class="col-sm-8">The user opens the app and is returned the correct application for their device, i.e. mobile, desktop, tablet, smart watch.<br><br></dd>
+
+          <dt class="col-sm-4">Makes a search</dt>
+          <dd class="col-sm-8">User enters a holiday destination, the system then responds with multiple category choices of items you need to complete a plan for a holiday booking. i.e. flights, accommodation, restaurants, activities.<br><br></dd>
+
+           <dt class="col-sm-4">Chooses Category</dt>
+            <dd class="col-sm-8">User chooses a category and the system responds by return a list of recommendations for that particular category.<br><br></dd>
+
+           <dt class="col-sm-4">Clicks an Item</dt>
+            <dd class="col-sm-8">User selects one item from the list and the system gives the user more information i.e. pictures, a description, star rating, reviews<br><br></dd>
+
+           <dt class="col-sm-4">User Likes/Saves Item</dt>
+            <dd class="col-sm-8">Once a user has decided they like a particular item they then decide to save this item. If the user is registered the system will save the item to their itinerary. The user is not registered they will be asked to do so.<br><br></dd>
+
+         <dt class="col-sm-4">User Opens a Profile</dt>
+            <dd class="col-sm-8">User signs up via social media (or e-mail), system stores their information<br><br></dd>
+
+         <dt class="col-sm-4">User Continues Itinerary Search</dt>
+            <dd class="col-sm-8">User chooses to continue browsing in a different category, repeating process 3, 4 and 5 until they are happy with their itinerary<br><br></dd>
+
+        <dt class="col-sm-4">User Reviews Itinerary</dt>
+         <dd class="col-sm-8">User clicks on “review itinerary” at which point the users itinerary is displayed for them to review with a book now button.<br><br></dd>
+
+         <dt class="col-sm-4">Decides to Share Itinerary</dt>
+            <dd class="col-sm-8">User presses the share button at which point the system return a list of friends from the users social profiles as well as a link to share via e-mail.
+   <br><br> </dd>
+       
+       <dt class="col-sm-4">User chooses friends</dt>
+            <dd class="col-sm-8">User clicks on the profiles they want to share the itinerary with and copy and pastes the shareable link. The system recognises friends on social media.
+    <br><br></dd>
+       <dt class="col-sm-4">Sends</dt>
+            <dd class="col-sm-8">The user clicks send and the system sends the choices to the social media profiles
+
+    <br><br></dd>
+       <dt class="col-sm-4">User e-mails</dt>
+            <dd class="col-sm-8">The user can then send an e-mail via their own mail server to a friend not on social media, this has no requirement from the system other than keeping the shareable link live.
+
+    </dd>
+        </dl>
+
+      </div>  
+       <!--/Use: Sharing--> 
+       
+        <!--Task: Sharing-->
+           <div class="col-md-7" id="sharing">
+               <h6 class="white-text">Sharing</h6>
+               <h2>Task Case</h2>
+               <br>
+      <!--Table-->  
+      <div class="table-responsive"> 
+       <table class="table table-hover">
+  <thead>
+    <tr>
+     <th>#</th>
+      <th>Step</th>
+      <th>User Activity</th>
+      <th>System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+     <th>1</th>
+      <td>Opens App</td>
+      <td>Opens App (mobile or desktop)</td>
+      <td>Notes whether user is on mobile or desktop</td>
+    </tr>
+    <tr>
+     <th>2</th>
+      <td>Makes a search</td>
+      <td>User enters holiday destination</td>
+      <td>System responds with a list of categories (hotel, activity, flights, food)</td>
+    </tr>
+    <tr>
+     <th>3</th>
+      <td>Choose category</td>
+      <td>User clicks on prefered a category</td>
+      <td>System gives top items in list format in the chosen location</td>
+    </tr>
+    <tr>
+     <th>4</th>
+      <td>Clicks a particular item</td>
+      <td>User selects one item from the list</td>
+      <td>Systems opens more information about the item</td>
+    </tr>
+    <tr>
+     <th>5</th>
+      <td>Decides they like item</td>
+      <td>Saves item to itinerary</td>
+      <td>System responds with an option to open a profile and then saves to users profile.
+User then asked continue or choose a new category</td>
+    </tr>
+    <tr>
+     <th>6</th>
+      <td>Choose category</td>
+      <td>User clicks on prefered a category</td>
+      <td>System gives top items in list format in the chosen location</td>
+    </tr>
+    <tr>
+     <th>7</th>
+      <td>User decides they like one in particular</td>
+      <td>User selects one item from the list</td>
+      <td>Systems opens more information about the item</td>
+    </tr>
+    <tr>
+     <th>8</th>
+      <td>Decides they like item</td>
+      <td>Saves item to itinerary</td>
+      <td>System responds with an option to open a profile and then saves to users profile. User then asked continue or choose a new category
+</td>
+    </tr>   
+    <tr class="text-center">
+      <td colspan="4"><strong>Tasks 3- 5 repeat until user is satisfied with the itinerary</strong></td>
+    </tr>
+    <tr>
+     <th>9</th>
+      <td>User decides to review itinerary</td>
+      <td>User presses review itinerary</td>
+      <td>System return chosen itinerary
+</td>
+    </tr>
+    <tr>
+     <th>10</th>
+      <td>Decides to share itinerary</td>
+      <td>User presses share</td>
+      <td>System returns a list of friends / share link
+</td>
+    </tr>
+    <tr>
+     <th>11</th>
+      <td>User chooses friends</td>
+      <td>User clicks social profiles of friends and selects the link</td>
+      <td>System recognises choices
+</td>
+    </tr>
+    <tr>
+     <th>12</th>
+      <td>Sends</td>
+      <td>User sends e-mail by clicking send</td>
+      <td>Systems sends choices
+</td>
+    </tr>
+    <tr>
+     <th>13</th>
+      <td>E-mails</td>
+      <td>User sends a personal e-mail to a friend who is not on social media</td>
+      <td>No activity – off site activity
+</td>
+    </tr>
+  </tbody>
+</table>
+  </div>  
+   <!--/Table-->
+
+      </div>  
+        <!--/Task: Sharing-->
+
+
+        
+
+            </div>
+            
+    </section>
+<!--Section: /Sharing-->
+
+
+
+<main>
+
+
+        </main>
+<!--Footer-->
+
+<!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
